@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --cor1: #EC8E9B;
+    --cor2: #5F7063;
+    --cor3: #F0F0F0;
+    --cor4: #FF0000;
+
+    --fonte-padrão: "Inter", sans-serif;
+    --fonte-título-destaque: "Lato", sans-serif;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: var(--fonte-padrão);
+}
+
+/* Estilo para o cabeçalho (header) */
+header {
+    padding: 10px 0px;
+    color: var(--cor2);
+    
+}
+
+/* Estilo para a barra de navegação (container) */
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: center; /* Centraliza verticalmente os elementos na barra de navegação */
+}
+
+/* Estilo para o logo */
+.logo img {
+    max-width: 250px; /* Largura máxima do logo */
+    margin-left: 80px;
+}
+
+/* Estilo para a barra de pesquisa */
+.barra-pesquisa {
+    margin: 0 auto; /* Centraliza a barra de pesquisa horizontalmente */
+    text-align: center; /* Centraliza o texto dentro da barra de pesquisa */
+    outline: 1px solid black;
+}
+
+/* Estilo para o formulário de pesquisa */
+form {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o campo de pesquisa */
+input[type="text"] {
+    width: 350px; /* Largura da barra de pesquisa */
+    height: 40px; /* Altura da barra de pesquisa */
+    padding: 8px;
+    border: none;
+}
+
+/* Estilo para o botão de pesquisa */
+button {
+    padding: 12px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para "Minha Conta" e "Meu Carrinho" */
+.meu-carrinho {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Margem à esquerda */
+    margin-right: 80px; /* Margem à direita */
+}
+
+.minha-conta{
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Margem à esquerda */
+
+}
+
+.minha-conta i, .meu-carrinho i {
+    margin-right: 8px; /* Espaçamento à direita do ícone */
+    font-size: 1.2em; /* Tamanho do ícone (ajuste conforme necessário) */
+}
+
+/* Estilo para tornar o menu responsivo */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: stretch; /* Estica os elementos para ocupar a largura total */
+    }
+
+    .barra-pesquisa {
+        margin: 10px 0; /* Margem superior e inferior na barra de pesquisa */
+    }
+
+    .minha-conta, .meu-carrinho {
+        margin: 10px 0; /* Margem superior e inferior para "Minha Conta" e "Meu Carrinho" */
+    }
+}
+
+/*navegação*/
+
+nav {
+    background-color: var(--cor1); /* Cor de fundo do menu de navegação */
+    padding: 10px 0; /* Espaçamento interno no menu de navegação */
+}
+
+/* Estilo para a lista do menu de navegação */
+nav ul {
+    list-style: none;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around; /* Distribui os itens horizontalmente */
+}
+
+.ofertas{
+    color: var(--cor4);
+}
+
+.ofertas:hover{
+    color: white;
+}
+
+/* Estilo para os itens da lista do menu de navegação */
+nav ul li {
+    color: white; /* Cor do texto nos itens do menu de navegação */
+    position: relative; /* Permite posicionar os subitens relativamente a este item */
+    cursor: pointer; /* Altera o cursor para indicar que é interativo */
+}
+
+/* Estilo para o menu dropdown */
+nav ul li ul {
+    display: none; /* Oculta o menu dropdown por padrão */
+    position: absolute; /* Posiciona o menu dropdown absolutamente em relação ao item pai */
+    top: 100%; /* Alinha o topo do menu dropdown com a parte inferior do item pai */
+    width: 200px; /* Largura do menu dropdown */
+    background-color: var(--cor1); /* Cor de fundo rosa */
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Estilo para os itens do menu dropdown */
+nav ul li ul li {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 5px 0; /* Adiciona margem superior e inferior entre os itens do dropdown */
+    border-bottom: 1px solid #fff; /* Adiciona linha horizontal entre os itens do dropdown */
+    padding-top: 10px; /* Adiciona espaçamento superior aos itens do dropdown */
+    padding-bottom: 10px;
+}
+
+.sem-linha{
+    border-bottom: none;
+}
+
+/* Exibe o menu dropdown quando o item pai é hover */
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Adiciona uma linha separadora entre os itens */
+nav ul li:not(:last-child):after {
+    margin: 0 10px; /* Margem à direita e à esquerda do separador */
+}
+
+
+
+li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.word {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  }

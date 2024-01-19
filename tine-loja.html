@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tine Loja | O Mundo Divertido</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div style="display: flex;
+  height: 100%;
+  background-color: #333;" class="word">i</div>
  <header>
     <div class="container">
       <div class="logo">
-          <img src="specialimages/avon.png" alt="logo">
+          <img src="imagens-tine-loja/logo-tine-loja.png" alt="logo">
       </div>
       <div class="barra-pesquisa">
         <form action="#" method="post">
@@ -20,14 +23,47 @@
         </form>
       </div>
         <div class="minha-conta">
+          <i class="fas fa-user"></i>
           <p>Minha Conta</p>
         </div> 
       
       <div class="meu-carrinho">
-
+        <i class="fas fa-shopping-cart"></i>
+          <p>Meu carrinho</p>
       </div>
 
     </div>
  </header>
+ <nav>
+  <ul>
+      <li>Novidades
+          <ul>
+              <li class="sem-linha"><a href="#">Ultima coleção</a></li>
+          </ul>
+      </li>
+      <li>Roupas
+          <ul>
+              <li><a href="#">Vestidos</a></li>
+              <li><a href="#">Polos</a></li>
+              <li><a href="#">Praia</a></li>
+              <li class="sem-linha"><a href="#">Calcinhas</a></li>
+          </ul>
+      </li>
+      <li>Calçados
+          <ul>
+              <li><a href="#">Sapatos</a></li>
+              <li class="sem-linha"><a href="#">Chinelos</a></li>
+          </ul>
+      </li>
+      <li>Acessórios
+          <ul>
+              <li><a href="#">Bonés</a></li>
+              <li><a href="#">Mochilas e Bolsas</a></li>
+              <li class="sem-linha"><a href="#">Perfumes</a></li>
+          </ul>
+      </li>
+      <li class="ofertas">Ofertas</li>
+  </ul>
+</nav>
 </body>
 </html>
