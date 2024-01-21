@@ -129,6 +129,7 @@ nav {
     background-color: var(--cor1); /* Cor de fundo do menu de navegação */
     padding: 10px 0px; /* Espaçamento interno no menu de navegação */
     padding-bottom: 2px;
+    margin-bottom: 0;
 }
 
 /* Estilo para a lista do menu de navegação */
@@ -162,14 +163,14 @@ nav ul li ul {
     top: 100%; /* Alinha o topo do menu dropdown com a parte inferior do item pai */
     width: 200px; /* Largura do menu dropdown */
     background-color: var(--cor1); /* Cor de fundo rosa */
-    padding: 20px;
+    padding: 15px;
     border-radius: 0px 0px 10px 10px;
 }
 
 /* Estilo para os itens do menu dropdown */
 nav ul li ul li {
     text-align: center; /* Centraliza o texto horizontalmente */
-    margin: 5px 0; /* Adiciona margem superior e inferior entre os itens do dropdown */
+    margin: 3px 0; /* Adiciona margem superior e inferior entre os itens do dropdown */
     border-bottom: 1px solid #fff; /* Adiciona linha horizontal entre os itens do dropdown */
     padding-top: 10px; /* Adiciona espaçamento superior aos itens do dropdown */
     padding-bottom: 10px;
@@ -194,40 +195,14 @@ li > a{
     color: white;
 }
 
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
+/*Início da  imagem*/
+
+.imagem {
+    margin-top: 0px;
+    text-align: center;
 }
 
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-}
-
-.slide img{
-    width: 800px;
-}
-
-.manual-navegation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px;
+.imagem > img{
+    width: 60%;
+    height: 360px;
 }

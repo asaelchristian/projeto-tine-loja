@@ -8,20 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<script>
-  window.onscroll = function() {myStickyFunction()};
-
-  var header = document.querySelector("header");
-  var sticky = header.offsetTop;
-
-  function myStickyFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-  }
-</script>
+<!--Crie para mim um código onde haverá 4 elementos que irei colocar no meu site, e eles deverão estar alinhados na horizontal com uma boa margem. São eles:                                                                                                                                        1º elemento: Quero que haja um ícone com 2 círculos dando voltas, meio que simulando o infinito, e ao lado desses círculos quero que haja a seguinte mensagem "PRIMEIRA TROCA GRÁTIS Compre com segurança", sendo que o "Compre com segurança" deverá estar abaixo de "PRIMEIRA TROCA GRÁTIS" estando pequeno.-->
 
 
 <body class="sticky-header-padding">
@@ -50,6 +37,7 @@
     </div>
  </header>
 
+ <!--Links de navegação-->
  <nav>
   <ul>
       <li>Novidades
@@ -82,47 +70,13 @@
   </ul>
 </nav>
 
-<main>
-  <section class="slider">
-     
-  <div class="slides">
-    <!--Radio Buttons-->
-    <input type="radio" name="radio-btn" id="radio1">
-    <input type="radio" name="radio-btn" id="radio2">
-    <input type="radio" name="radio-btn" id="radio3">
-    <input type="radio" name="radio-btn" id="radio4">
-    <div class="slides">
-    <!--Fim dos Radio Buttons-->
-
-    <!--Imagem Slides-->
-    <div class="slide">
-        <img src="imagens-tine-loja/tine.jpg" alt="Cristine">
-    </div>
-
-    <div class="slide">
-      <img src="imagens-tine-loja/black-friday.jpg" alt="Promoção da Black Friday">
-  </div>
-  <!--Fim de imagem Slides-->
 
 
-   <!--Navegation auto-->
-  <div class="navegation-auto">
-
-    <div class="auto-btn1"></div>
-    <div class="auto-btn2"></div>
-
-   </div>
-   <!--Fim de Navegation auto-->
-
-   
-   <!--Labels-->
-   <div class="manual-navegation">
-    <label for="radio1" class="manual-btn"></label>
-    <label for="radio2" class="manual-btn"></label>
-   </div>
-    
-
+<!--Seção da imagem-->
+  <section class="imagem">
+  <img src="imagens-tine-loja/tine.jpg" alt="Tine">
   </section>
-</main>
+
+
 </body>
 </html>
