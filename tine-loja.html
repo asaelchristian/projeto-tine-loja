@@ -7,12 +7,27 @@
     <title>Tine Loja | O Mundo Divertido</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div style="display: flex;
-  height: 100%;
-  background-color: #333;" class="word">i</div>
- <header>
-    <div class="container">
+
+<script>
+  window.onscroll = function() {myStickyFunction()};
+
+  var header = document.querySelector("header");
+  var sticky = header.offsetTop;
+
+  function myStickyFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
+
+
+<body class="sticky-header-padding">
+  
+ <header class="sticky">
+    <div class="container-logo">
       <div class="logo">
           <img src="imagens-tine-loja/logo-tine-loja.png" alt="logo">
       </div>
@@ -34,6 +49,7 @@
 
     </div>
  </header>
+
  <nav>
   <ul>
       <li>Novidades
@@ -65,5 +81,48 @@
       <li class="ofertas">Ofertas</li>
   </ul>
 </nav>
+
+<main>
+  <section class="slider">
+     
+  <div class="slides">
+    <!--Radio Buttons-->
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <div class="slides">
+    <!--Fim dos Radio Buttons-->
+
+    <!--Imagem Slides-->
+    <div class="slide">
+        <img src="imagens-tine-loja/tine.jpg" alt="Cristine">
+    </div>
+
+    <div class="slide">
+      <img src="imagens-tine-loja/black-friday.jpg" alt="Promoção da Black Friday">
+  </div>
+  <!--Fim de imagem Slides-->
+
+
+   <!--Navegation auto-->
+  <div class="navegation-auto">
+
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+
+   </div>
+   <!--Fim de Navegation auto-->
+
+   
+   <!--Labels-->
+   <div class="manual-navegation">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+   </div>
+    
+
+  </section>
+</main>
 </body>
 </html>

@@ -11,6 +11,9 @@
     box-sizing: border-box;
 }
 
+main{
+    margin-top: 100px;
+}
 
 :root{
     --cor1: #EC8E9B;
@@ -27,15 +30,22 @@ body {
     font-family: var(--fonte-padrão);
 }
 
+body.sticky-header-padding {
+    padding-top: 60px; /* Ajuste conforme necessário para evitar sobreposição de conteúdo */
+}
+
 /* Estilo para o cabeçalho (header) */
-header {
-    padding: 10px 0px;
-    color: var(--cor2);
-    
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 4px;
+    background-color: var(--cor3)
 }
 
 /* Estilo para a barra de navegação (container) */
-.container {
+.container-logo {
     display: flex;
     justify-content: space-between; /* Distribui os elementos horizontalmente */
     align-items: center; /* Centraliza verticalmente os elementos na barra de navegação */
@@ -117,7 +127,8 @@ button {
 
 nav {
     background-color: var(--cor1); /* Cor de fundo do menu de navegação */
-    padding: 10px 0; /* Espaçamento interno no menu de navegação */
+    padding: 10px 0px; /* Espaçamento interno no menu de navegação */
+    padding-bottom: 2px;
 }
 
 /* Estilo para a lista do menu de navegação */
@@ -141,6 +152,7 @@ nav ul li {
     color: white; /* Cor do texto nos itens do menu de navegação */
     position: relative; /* Permite posicionar os subitens relativamente a este item */
     cursor: pointer; /* Altera o cursor para indicar que é interativo */
+    line-height: 55px;
 }
 
 /* Estilo para o menu dropdown */
@@ -177,16 +189,45 @@ nav ul li:not(:last-child):after {
     margin: 0 10px; /* Margem à direita e à esquerda do separador */
 }
 
-
-
 li > a{
     text-decoration: none;
     color: white;
 }
 
-.word {
-    margin: auto;
-    color: white;
-    font: 700 normal 2.5em 'tahoma';
-    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
-  }
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navegation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px;
+}
