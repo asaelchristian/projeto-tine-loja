@@ -206,3 +206,62 @@ li > a{
     width: 60%;
     height: 360px;
 }
+/*Fim da Imagem*/
+
+/*Início dos ícones e seus respectivos textinhos*/
+
+
+.alinhamento{
+    display: inline-block;
+    margin-right: 25px; 
+    margin-top: 35px;
+    text-align: center; /* Adicionado para centralizar os elementos na página */
+}
+
+span{
+    font-family: var(--fonte-padrão);
+    font-weight: 400;
+    margin-left: 15px;
+    font-size: 16px;
+    vertical-align: top; /* Adicionado para alinhar o texto à parte superior do ícone */
+}
+
+.fa-arrows-spin, .fa-credit-card, .fa-truck, .fa-motorcycle{
+    font-size: 2.3em;
+}
+
+.big-text{
+    margin-bottom: 20px;
+}
+
+.small-text{
+    font-family: var(--fonte-padrão);
+    font-weight: 280;
+    font-size: 13px;
+    padding-bottom: 80px; 
+    line-height: 0px;
+}
+
+
+.semi-image{
+    min-width: 300px;
+    margin-left: 20px;
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  .imagem-container img {
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar */
+    width: 500px;
+  }
+
+  .imagem-container:hover img {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+  }
