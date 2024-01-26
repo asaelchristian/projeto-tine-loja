@@ -203,7 +203,7 @@ li > a{
 }
 
 .imagem > img{
-    width: 60%;
+    width: 100%;
     height: 360px;
 }
 /*Fim da Imagem*/
@@ -248,20 +248,33 @@ span{
     margin-left: 20px;
 }
 
-.imagem-container {
+
+
+  /* Seção da imagens que se movem - apresentação*/
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  .image-row {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 20px 0; /* Margem vertical entre as linhas */
+  }
+  .image-column {
+    margin: 0 10px; /* Margem horizontal entre as colunas */
     position: relative;
     overflow: hidden;
+    height: 600px; /* Altura das imagens */
+  }
+  .image-column img {
     max-width: 100%;
-    height: auto;
-    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Adiciona transição de transformação */
   }
-
-  .imagem-container img {
-    object-fit: cover;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar */
-    width: 500px;
-  }
-
-  .imagem-container:hover img {
-    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+  .image-column:hover img {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
   }
