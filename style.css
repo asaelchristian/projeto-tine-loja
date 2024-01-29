@@ -278,3 +278,11 @@ span{
   .image-column:hover img {
     transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
   }
+
+  h1{
+    text-align: center;
+    font-family: var(--fonte-título-destaque);
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
