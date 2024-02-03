@@ -245,7 +245,7 @@ span{
 
 .semi-image{
     min-width: 300px;
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 
@@ -284,7 +284,7 @@ span{
     font-family: var(--fonte-título-destaque);
     font-size: 28px;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .tc-container{
@@ -316,8 +316,9 @@ span{
 
   .primeiro-parágrafo{
     font-family: var(--fonte-padrão);
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
+    margin-top: 10px;
   }
 
   .segundo-parágrafo{
@@ -342,17 +343,49 @@ span{
     padding-right: 5px;
   }
 
-  .container-texto4{
+  .container-texto3{
     position: relative;
     font-family: var(--fonte-padrão);
+    height: 536px;
   }
  
-.texto-block4{
+.texto-block3{
     position: absolute;
     background-color: var(--cor2);
-    bottom: 370px;
+    bottom: 506px;
     right: 220px;
     color: var(--cor3);
     padding-left: 5px;
     padding-right: 5px; 
+}
+
+strong{
+    font-size: 13px;
+}
+
+del{
+    font-family: var(--fonte-padrão);
+    font-size: 12px;
+}
+
+.sustentabilidade{
+     width: 600px;
+     margin-left: 138px;
+     height: 235px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inovção{
+    width: 600px;
+    height: 235px;
+    margin-left: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sustentabilidade:hover{
+    transform: scale(1.01); 
+}
+
+.inovção:hover{
+    transform: scale(1.01); 
 }
