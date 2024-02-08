@@ -30,6 +30,10 @@ body {
     font-family: var(--fonte-padrão);
 }
 
+.barra-pesquisa input{
+    outline: none;
+}
+
 body.sticky-header-padding {
     padding-top: 60px; /* Ajuste conforme necessário para evitar sobreposição de conteúdo */
 }
@@ -106,6 +110,7 @@ button {
     margin-right: 8px; /* Espaçamento à direita do ícone */
     font-size: 1.2em; /* Tamanho do ícone (ajuste conforme necessário) */
 }
+
 
 /* Estilo para tornar o menu responsivo */
 @media screen and (max-width: 768px) {
@@ -449,4 +454,110 @@ del{
     color: var(--cor3);
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.lista-vip{
+    background-color: var(--cor1);
+    max-width: 1300px;
+    min-width: 260px;
+    height: 200px;
+    margin: 50px auto 50px auto;
+    padding: 55px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.252);
+}
+
+.VIP{
+    font-family: var(--fonte-padrão);
+    font-size: 23px;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+
+.exclusivas{
+    font-family: var(--fonte-padrão);
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: 57%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    line-height: 25px;
+    
+}
+
+.ofertas-exclusivas{
+    font-family: var(--fonte-padrão);
+    font-size: 18px;
+    position: absolute;
+    top: 76%;
+    left: 29%;
+    transform: translate(-20%, -50%);
+    color: #444d46;
+}
+
+.barra-nome {
+    width: 300px;
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.input-nome[type="text"] {
+    width: 350px; /* Largura da barra de pesquisa */
+    height: 50px; /* Altura da barra de pesquisa */
+    padding: 8px;
+    border: none;
+}
+
+.barra-email{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(30%, 30%);
+    border-radius: 10px;
+}
+
+.email[type="text"]{
+    width: 350px; /* Largura da barra de pesquisa */
+    height: 50px; /* Altura da barra de pesquisa */
+    padding: 8px;
+    border: none;
+}
+
+.cadastrar{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    background-color: var(--cor2);
+    top: 45%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.cadastrar:hover{
+    background-color: #747b76;
+    transition: 1s;
+}
+
+.cadastrar > p{
+    color: var(--cor3);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lista-vip input{
+    border-radius: 10px;
+    outline: none;
 }
