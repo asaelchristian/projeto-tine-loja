@@ -222,6 +222,7 @@ li > a{
 
 .alinhamento{
     display: inline-block;
+    position: relative;
     margin-right: 25px; 
     margin-top: 35px;
     text-align: center; /* Adicionado para centralizar os elementos na página */
@@ -264,28 +265,28 @@ span{
   .image-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; 
+    align-items: center; 
   }
   .image-row {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    margin: 20px 0; /* Margem vertical entre as linhas */
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 0; 
   }
   .image-column {
-    margin: 0 10px; /* Margem horizontal entre as colunas */
+    margin: 0 10px;
     position: relative;
     overflow: hidden;
-    height: 600px; /* Altura das imagens */
+    height: 600px;
   }
   .image-column img {
     max-width: 100%;
     height: 100%;
-    transition: transform 0.3s ease; /* Adiciona transição de transformação */
+    transition: transform 0.3s ease; 
   }
   .image-column:hover img {
-    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.1); 
   }
 
   h1{
@@ -616,4 +617,119 @@ h2{
 .cristine-ursinho-vermelho  img{
     width: 210px;
     height: 210px; 
+}
+
+footer{
+    background-color: var(--cor3);
+    margin-top: 50px;
+    padding-top: 20px;
+    height: 400px;
+    list-style: none;
+    position: relative;
+}
+
+.paragrafo-footer-logo{
+    margin-left: 80px;
+    font-family: var(--fonte-padrão);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--cor1);
+    margin: 16px 6px 0px 0px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--cor2);
+    transition: all 0.5s ease;
+    padding: 10px;
+
+}
+
+.links-footer{
+    color: black;
+    text-decoration: none;
+}
+
+.institucional{
+    position: absolute;
+    top: 80px;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    line-height: 2.5em;
+}
+
+h3{
+    font-size: 20px;
+    font-family: var(--fonte-padrão);
+    font-weight: 500;
+}
+
+.listas-footer{
+    font-family: var(--fonte-padrão);
+    font-weight: 400;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.minha-conta-2{
+    position: absolute;
+    top: 120px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    line-height: 2.5em;
+}
+
+.ajuda-suporte{
+    position: absolute;
+    top: 121px;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    line-height: 2.5em;
+}
+
+.contato{
+    position: absolute;
+    top: 141px;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    line-height: 2.5em;
+}
+
+.pagamento-formas{
+    position: absolute;
+    top: 49px;
+    left: 75%;
+}
+
+.ltda{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mensagem-final{
+    position: absolute;
+    background-color: var(--cor2);
+    width: 100%;
+    font-family: var(--fonte-padrão);
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    height: 45px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.github-asael{
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
 }
