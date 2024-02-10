@@ -39,7 +39,7 @@ body {
 }
 
 body.sticky-header-padding {
-    padding-top: 60px; /* Ajuste conforme necessário para evitar sobreposição de conteúdo */
+    padding-top: 65px; /* Ajuste conforme necessário para evitar sobreposição de conteúdo */
 }
 
 /* Estilo para o cabeçalho (header) */
@@ -115,22 +115,13 @@ button {
     font-size: 1.2em; /* Tamanho do ícone (ajuste conforme necessário) */
 }
 
-
-/* Estilo para tornar o menu responsivo */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        align-items: stretch; /* Estica os elementos para ocupar a largura total */
-    }
-
-    .barra-pesquisa {
-        margin: 10px 0; /* Margem superior e inferior na barra de pesquisa */
-    }
-
-    .minha-conta, .meu-carrinho {
-        margin: 10px 0; /* Margem superior e inferior para "Minha Conta" e "Meu Carrinho" */
-    }
+.a-header{
+    color: var(--cor2);
+    text-decoration: none;
 }
+
+
+
 
 /*navegação*/
 
@@ -185,6 +176,10 @@ nav ul li ul li {
     padding-bottom: 10px;
 }
 
+nav ul li ul li:hover{
+    text-decoration: underline;
+}
+
 .sem-linha{
     border-bottom: none;
 }
@@ -203,6 +198,7 @@ li > a{
     text-decoration: none;
     color: white;
 }
+
 
 /*Início da  imagem*/
 
@@ -255,7 +251,7 @@ span{
 
 .semi-image{
     min-width: 300px;
-    margin-left: 100px;
+    margin-left: 25px;
 }
 
 
@@ -304,7 +300,7 @@ span{
     margin-top: 20px;
     margin-bottom: 100px;
     position: relative;
-    margin-left: 60px;
+    margin-left: 27px;
   }
 
   .tc-container img{
@@ -380,7 +376,7 @@ del{
 
 .sustentabilidade{
      width: 600px;
-     margin-left: 138px;
+     margin-left: 57px;
      height: 235px;
      transition: transform 0.3s ease;
 }
@@ -388,7 +384,7 @@ del{
 .inovção{
     width: 600px;
     height: 235px;
-    margin-left: 30px;
+    margin-left: 25px;
     transition: transform 0.3s ease;
 }
 
@@ -407,7 +403,7 @@ del{
     margin-top: 20px;
     margin-bottom: 100px;
     position: relative;
-    margin-left: 60px;
+    margin-left: 27px;
 }
 
 .mais-vendidos img{
@@ -585,13 +581,13 @@ h2{
 
 .fotos div{
     display: inline-block;
-    margin: 0px 2px 40px 2px;
+    margin: 0px 2px 40px 0px;
 }
 
 .coleção-crescer  img{
     width: 210px;
     height: 210px;
-    margin-left: 96px;
+    margin-left: 30px;
 }
 
 .dica-tine  img{
@@ -629,10 +625,14 @@ footer{
 }
 
 .paragrafo-footer-logo{
-    margin-left: 80px;
+    margin-left: 25px;
     font-family: var(--fonte-padrão);
     font-size: 13px;
     font-weight: 400;
+}
+
+.container-logo img{
+    margin-left: 25px;
 }
 
 .social-links a{
@@ -654,10 +654,14 @@ footer{
     text-decoration: none;
 }
 
+.links-footer:hover{
+    text-decoration: underline;
+}
+
 .institucional{
     position: absolute;
     top: 80px;
-    left: 29%;
+    left: 30%;
     transform: translate(-50%, -50%);
     line-height: 2.5em;
 }
@@ -678,7 +682,7 @@ h3{
 .minha-conta-2{
     position: absolute;
     top: 120px;
-    left: 40%;
+    left: 41%;
     transform: translate(-50%, -50%);
     line-height: 2.5em;
 }
@@ -686,7 +690,7 @@ h3{
 .ajuda-suporte{
     position: absolute;
     top: 121px;
-    left: 53%;
+    left: 54%;
     transform: translate(-50%, -50%);
     line-height: 2.5em;
 }
@@ -694,7 +698,7 @@ h3{
 .contato{
     position: absolute;
     top: 141px;
-    left: 70%;
+    left: 72%;
     transform: translate(-50%, -50%);
     line-height: 2.5em;
 }
@@ -730,6 +734,6 @@ h3{
 
 .github-asael{
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
     color: white;
 }
