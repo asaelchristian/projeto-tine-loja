@@ -5,466 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens-tine-loja/Marca_Tine_CMYK_11-Símbolo_Rosa.png" type="image/x-icon">
-    <title>Tine Loja | Viva uma aventura</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS do projeto-->
     <link rel="stylesheet" href="style.css">
+    <title>Tine Loja | Viva uma aventura</title>
+
+
 </head>
-
-
-<body class="sticky-header-padding">
-  
- <header class="sticky">
-    <div class="container-logo">
-      <div class="logo">
-          <a href="#">
-            <img src="imagens-tine-loja/logo-tine-loja.png" alt="logo">
-          </a>
-      </div>
-      <div class="barra-pesquisa">
-        <form action="#" method="post">
-          <input type="text" name="search" placeholder="O que você está procurando?" required>
-          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+<body>
+  <header class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="imagens-tine-loja/logo-tine-loja.png" alt="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <form class="d-flex me-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="O que você gostaria?" aria-label="Search" style="margin-top: 10px;">
+          <button  class="btn btn-secondary me-5" type="submit" style="margin-top: 10px;">Buscar</button>
         </form>
       </div>
-        <a class="a-header" href="#">
-          <div class="minha-conta">
-            <i class="fas fa-user"></i>
-              <p>Minha Conta</p>
-          </div>
-        </a>
-      
-      <a class="a-header" href="#">
-        <div class="meu-carrinho">
-          <i class="fas fa-shopping-cart"></i>
-                <p>Meu carrinho</p>
-        </div>
-      </a>
-
-    </div>
- </header>
-
- <!--Links de navegação-->
- <nav>
-  <ul>
-      <li>Novidades
-          <ul>
-              <li class="sem-linha"><a href="#">Ultima coleção</a></li>
-          </ul>
-      </li>
-      <li>Roupas
-          <ul>
-              <li><a href="#">Vestidos</a></li>
-              <li><a href="#">Polos</a></li>
-              <li><a href="#">Praia</a></li>
-              <li class="sem-linha"><a href="#">Calcinhas</a></li>
-          </ul>
-      </li>
-      <li>Calçados
-          <ul>
-              <li><a href="#">Sapatos</a></li>
-              <li class="sem-linha"><a href="#">Chinelos</a></li>
-          </ul>
-      </li>
-      <li>Acessórios
-          <ul>
-              <li><a href="#">Bonés</a></li>
-              <li><a href="#">Mochilas e Bolsas</a></li>
-              <li class="sem-linha"><a href="#">Perfumes</a></li>
-          </ul>
-      </li>
-      <li class="ofertas">Ofertas</li>
-  </ul>
-</nav>
-
-
-
-<!--Seção da imagem do pôster-->
-  <a href="#">
-    <div class="imagem">
-    <img src="imagens-tine-loja/post-main-website.png" alt="Post principal da Tine Loja">
-    </div>
-  </a>
-
-
-
-<main>
-  <div class="semi-image">
-  
-      <!--Seções dos ícones e suas respectivas mensagens-->
-  
-       <!--Seção 1-->
-      <section class="alinhamento">
-      <i class="fa-solid fa-arrows-spin"><span class="big-text">PRIMEIRA TROCA GRÁTIS</span></i>
-      <br>
-          <div class="small-text">Compre com segurança</div>
-    </section>
-  
-    <!--Seção 2-->
-    <div class="alinhamento">
-      <i class="fa-regular fa-credit-card"><span class="big-text">ATÉ 6X SEM JUROS</span></i>
-      <br>
-      <div class="small-text" style="margin-left: 30px;">No cartão de crédito</div>
-    </div>
-  
-  
-    <!--Seção 3-->
-    <div class="alinhamento">
-      <i class="fa-solid fa-truck"><span class="big-text">FRETE GRÁTIS PARA BRASIL</span></i>
-      <br>
-      <div class="small-text"  style="margin-left: -27px;">A partir de R$ 399,00</div>
-    </div>
-  
-  
-    <!--Seção 4-->
-    <div class="alinhamento">
-      <i class="fa-solid fa-motorcycle"><span class="big-text">FRETE GRÁTIS FORTALEZA E 
-        REGIÃO METROPOLITANA</span></i>
-      <br>
-        <div class="small-text"  style="margin-left: -235px;">A partir de R$ 199,00</div>
-    </div>
-  
-  </div>
-  
-  <section class="image-container">
-  
-  
-    <!-- Primeira linha de imagens -->
-    <div class="image-row">
-      <div class="image-column">
-        <img src="imagens-tine-loja/tine-vestidos.jpg" alt="Tine-vestidos" style="width: 550px;">
-      </div>
-      <div class="image-column">
-        <img src="imagens-tine-loja/shorts-tine.jpg" alt="Shorts" style="width: 550px;">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button" style="margin-top: 10px;">Sign in</button>
+        <button class="btn btn-outline-danger" type="button" style="margin-top: 10px;">Sign up</button>
       </div>
     </div>
-  
-  
-    <!-- Segunda linha de imagens -->
-    <div class="image-row">
-      <div class="image-column">
-        <img src="imagens-tine-loja/polos-tine-loja.jpg" alt="Polos" style="width: 550px;">
-      </div>
-      <div class="image-column">
-        <img src="imagens-tine-loja/estilos-tine.png" alt="Estilos da Tine Loja" style="width: 550px;">
-      </div>
-    </div>
-  </section>
-
-  <h1>Novidades</h1>
+  </header>
 
 
-   <!--Imagem hover 1-->
-  <div class="tc-container">
-       
-          <div class="container-texto1">
-            <img class="top-img" src="imagens-tine-loja/tine-amostrada.jpg" alt="Cristine">
-            <img src="imagens-tine-loja/tine-pose-normal.jpg" alt="Cristine">
-            <div class="texto-block1">
-              <p>17% off</p>
-            </div>
-          </div>
-          <figure>
-            <figcaption>
-              <p class="primeiro-parágrafo">VESTIDO TRADICIONAL AMARELO <br> <del>R$ 150,00</del> &rarr; <strong>R$ 104,10</strong></p>  
-             
-              <p class="segundo-parágrafo">ou 6x de R$ 25,00 sem juros</p> 
-            </figcaption>
-          </figure>
-    </div>
-
-    <!--Imagem hover 2-->
-    <div class="tc-container">
-       
-      <img class="top-img" src="imagens-tine-loja/cristine-branca.jpg" alt="Cristine">
-      <img src="imagens-tine-loja/cristine-pose-branca.jpg" alt="Cristine">
-      <figure>
-        <figcaption>
-          <p class="primeiro-parágrafo">VESTIDO BRANCO DE PANDA <br> <strong>R$ 165,00</strong></p>  
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           
-          <p class="segundo-parágrafo">ou 6x de R$ 27,50 sem juros</p> 
-        </figcaption>
-      </figure>
-    </div>
-
-    <!--Imagem hover 3-->
-    <div class="tc-container">
-       
-      <div class="container-texto3">
-        <img class="top-img" src="imagens-tine-loja/meninas-pose-meia-volta.jpg" alt="Cristine">
-        <img src="imagens-tine-loja/meninas-pose-normal.jpg" alt="Cristine">
-        <div class="texto-block3">
-           <p>25% off</p>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Novidades
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Última Coleção</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Roupas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Calcinhas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Praia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Eventos</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Calçados
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sapatos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Chinelos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sandalhas</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Acessórios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bonés</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Mochilas e Bolsas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Perfumes</a></li>
+              </ul>
+            </li>
+            
+          </ul>
         </div>
       </div>
-      <figure>
-        <figcaption>
-          <p class="primeiro-parágrafo">VESTIDO LISTRADO XADREZ <br> <del>R$ 180,00</del> &rarr; <strong>R$ 96,00</strong></p>  
-          
-          <p class="segundo-parágrafo">ou 6x de R$ 16,00 sem juros</p> 
-        </figcaption>
-      </figure>
-    </div>
-
-
-    <!--Imagem hover 4-->
-    <div class="tc-container">
-      <img class="top-img" src="imagens-tine-loja/cristine-panda-planta.jpg" alt="Cristine">
-      <img src="imagens-tine-loja/cristine-panda.jpg" alt="Cristine">
-        
-      
-      <figure>
-        <figcaption>
-          <p class="primeiro-parágrafo">VESTIDO DE PANDAS PRETO E BRANCO <br> <strong>R$ 80,00</strong></p>  
-          
-          <p class="segundo-parágrafo">ou 4x de R$ 20,00 sem juros</p> 
-        </figcaption>
-      </figure>
-    </div>
-
-     <!--Imagem de Sustentabilidade Tine Loja-->
-      <a href="#"><img class="sustentabilidade" src="imagens-tine-loja/sustentabilidade-tine.jpg" alt="Sustentabilidade Tine Loja"></a>
-
-    <!--Imagem de Inovação Tine Loja-->
-      <a href="#"><img class="inovção" src="imagens-tine-loja/heloisa-tine-inovacao.JPG" alt="Inovção Tine Loja"></a>
-
-     
-     
-      <h1>Mais Vendidos</h1>
-
-     
-      <!--Imagem hover 1/Mais Vendidos-->
-  
-     <div class="mais-vendidos">
-       
-      <img class="top-img" src="imagens-tine-loja/tine-vestido-roxo-pose.jpg" alt="Cristine">
-      <img src="imagens-tine-loja/tine-vestido-roxo-normal.jpg" alt="Cristine">
-    <figure>
-      <figcaption>
-        <p class="primeiro-parágrafo">VESTIDO COM BOLINHAS - ROXO <br> <strong>R$ 100,00</strong></p>  
-       
-        <p class="segundo-parágrafo">ou 5x de R$ 20,00 sem juros</p> 
-      </figcaption>
-    </figure>
-</div>
-
-<!--Imagem hover 2/Mais Vendidos-->
-<div class="mais-vendidos">
+    </nav>
  
-<div class="container-texto-imagem2">
-  <img class="top-img" src="imagens-tine-loja/tine-vestido-vermelho-pose.jpg" alt="Cristine">
-  <img src="imagens-tine-loja/tine-vestido-vermelho-normal.jpg" alt="Cristine">
-  <div class="textinho-2">
-    <p>50% off</p>
-  </div>
-</div>
-<figure>
-  <figcaption>
-    <p class="primeiro-parágrafo">VESTIDO HALF-SHIRT VERMELHO <br> <del>R$ 300,00</del> &rarr; <strong>R$ 150,00</strong></p>  
-    
-    <p class="segundo-parágrafo">ou 6x de R$ 25,00 sem juros</p> 
-  </figcaption>
-</figure>
-</div>
-
-<!--Imagem hover 3/Mais Vendidos-->
-<div class="mais-vendidos">
- 
-
-  <img class="top-img" src="imagens-tine-loja/tine-vestido-azul-pose.jpg" alt="Cristine">
-  <img src="imagens-tine-loja/tine-vestido-azul-normal.jpg" alt="Cristine">
-  
-
-<figure>
-  <figcaption>
-    <p class="primeiro-parágrafo">VESTIDO COM BOLINHAS - AZUL <br> <strong>R$ 100,00</strong></p>  
-    
-    <p class="segundo-parágrafo">ou 5x de R$ 20,00 sem juros</p> 
-  </figcaption>
-</figure>
-</div>
-
-
-<!--Imagem hover 4/Mais Vendidos-->
-<div class="mais-vendidos">
-<img class="top-img" src="imagens-tine-loja/tine-vestido-verde-pose.jpg" alt="Cristine">
-<img src="imagens-tine-loja/tine-vestido-verde-normal.jpg" alt="Cristine">
-  
-
-<figure>
-  <figcaption>
-    <p class="primeiro-parágrafo">VESTIDO HALF-SHIRT VERDE <br> <strong>R$ 290,00</strong></p>  
-    
-    <p class="segundo-parágrafo">ou 5x de R$ 58,00 sem juros</p> 
-  </figcaption>
-</figure>
-</div>
-
-
-
-<!--container - nome e email-->
-<div class="lista-vip">
-   <p class="VIP">Cadastre-se em nossa lista VIP</p>
-   <p class="exclusivas">Fique por dentro de tudo que acontece e <br>
-    receba <strong class="ofertas-exclusivas">ofertas exclusivas!</strong></p>
-
-
-   <!--Container Nome-->
-  <div class="barra-nome">
-      <form action="#" method="post">
-        <input class="input-nome" type="text" name="search" placeholder="Nome" required>
-      </form>
-  </div>
-
-
-    <!--Container E-mail-->
-  <div class="barra-email">
-  <form action="#" method="post">
-    <input class="email" type="text" name="search" placeholder="E-mail" required>
-  </form>
-  </div>
-
-<!--botão CADASTRAR-->
-<a href="#">
-  <div class="cadastrar">
-     <p>Cadastrar</p>
-  </div>
-</a>
-
-</div>
-
-<article>
-  <section>
-    <h2>Siga-nos no instagram</h2>
-    <p id="instargram">@tineloja</p>
-  </section>
-
-
-  <!--Seção das fotos finais-->
-  <section class="fotos">
-      
-
-      <!--Foto 1-->
-      <div class="coleção-crescer">
-        <a href="#"><img src="imagens-tine-loja-fotos-finais/colecao-crescer (1).png" alt="Coleção crescer"></a>
-      </div>
-      
-
-      <!--Foto 2-->
-      <div class="dica-tine" >
-        <a href="#"><img src="imagens-tine-loja-fotos-finais/dica-tine.jpg" alt="Dica Tine"></a>
-      </div>
-      
-
-      <!--Foto 3-->
-       <div class="gemias-tine">
-        <a href="#"><img src="imagens-tine-loja-fotos-finais/gemias-tine.png" alt="Gêmias Tine"></a>
-      </div>
-
-
-      <!--Foto 4-->
-      <div class="cristine-paulo-heloísa" >
-        <a href="#"><img src="imagens-tine-loja-fotos-finais/tine-paulinho-heloisa.JPG" alt="Cristine, Paulo e Heloísa"></a>
-      </div>
-
-
-      <!--Foto 5-->
-      <div class="cristine-ursinho-verde" >
-        <a href="#"><img src="imagens-tine-loja-fotos-finais/tine-ursinho-verde.jpg" alt="Cristine com ursinho e vestido verde"></a>
-      </div>
-
-
-      <!--foto 6-->
-      <div class="cristine-ursinho-vermelho" >
-        <a href="#"><img src="imagens-tine-loja-fotos-finais/tine-ursinho-vermelho.jpg" alt="Cristine com ursinho e vestido vermelho"></a>
-      </div>
-  
-  </section>
-</article>
-
-
-
-
-<!--Rodapé / Fim do site-->
-<footer>
-  
-
-  <!--Logo, descrição e redes sociais-->
-  <div class="container-logo">
-    <div class="logo">
-        <img src="imagens-tine-loja/logo-tine-loja.png" alt="logo">
-        <p class="paragrafo-footer-logo"> 
-          Desde 2021 nossas roupas reúnem estilo, <br> conforto e sustentabilidade. Dê o que há <br> de melhor para sua filha!
-     </p>
-     <div class="social-links">
-      <a style="margin-left: 25px;" href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-  </div>
+  <!--Carrosel de imagens-->
 
   
-  
-  <!--Aba Institucional-->
-  <div class="institucional">
-    <h3>Institucional</h3>
-    <ul>
-      <li class="listas-footer"><a class="links-footer" href="#">A Empresa</a></li>
-    </ul>
-  </div>
-
-
-  <!--Aba Minha Conta-->
-  <div class="minha-conta-2">
-    <h3>Minha Conta</h3>
-    <ul>
-      <li class="listas-footer"><a class="links-footer" href="#">Minha Conta</a></li>
-      <li class="listas-footer"><a class="links-footer" href="#">Meus Pedidos</a></li>
-      <li class="listas-footer"><a class="links-footer" href="#">Meu Carrinho</a></li>
-    </ul>
-  </div>
-
-
-  <!--Aba Ajuda e Suporte-->
-  <div class="ajuda-suporte">
-    <h3>Ajuda e Suporte</h3>
-    <ul>
-      <li class="listas-footer"><a class="links-footer" href="#">Política de Entrega</a></li>
-      <li style="line-height: 1.4em;" class="listas-footer"><a class="links-footer" href="#">Privacidade e <br> Segurança</a></li>
-      <li class="listas-footer"><a class="links-footer" href="#">Trocas e Devoluções</a></li>
-    </ul>
-  </div>
-
-
-
-
-<!--Aba Contato-->
-<div class="contato">
-  <h3>Contato</h3>
-  <ul>
-    <li class="listas-footer"><a class="links-footer" href="#">lojaon@tine.com.br</a></li>
-    <li class="listas-footer"><a class="links-footer" href="#">(85) 8372-8382</a></li>
-    <li class="listas-footer"><a class="links-footer" href="#">Fale Conosco</a></li>
-    <li style="line-height: 1.4em;" class="listas-footer"><a class="links-footer" href="#">Atendimento: <br> Segunda à Sábado,de 9h às 18h.</a></li>
-  </ul>
-</div>
-
-
-
-
-<!--Aba Formas de Pagamento-->
-<div class="pagamento-formas">
-  <h3>Formas de Pagamento</h3>
-    <img src="imagens-tine-loja/cartões-de-crédito.png" alt="Cartões de crédito aceitos">
-</div>
-
-
-<!--LTDA-->
-<p class="ltda">Keuly e Miza Indústrias e Comércio de Confecções LTDA - 97.494.436.865/9371-19</p>
-
-
-
-<!--Mensagem Final-->
-<div class="mensagem-final">
-  <p>Desenvolvido por <a class="github-asael" href="https://github.com/asaelchristian" target="_blank" rel="external" hreflang="en">Asael Christian</a></p>
-</div>
-
-</footer>
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
