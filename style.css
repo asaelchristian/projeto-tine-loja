@@ -5,6 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
+
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
 :root{
     --cor1: #EC8E9B;
     --cor2: #5F7063;
@@ -15,14 +24,24 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
-header{
+
+.container-fluid{
     background-color: var(--cor3);
 }
 
-.dropdown-item:hover{
-    background-color: #dee8e1;
+header a{
+    font-family: var(--fonte-padrão);
 }
 
-nav{
-    background-color: var(--cor1);
+.dropdown-item{
+    color: var(--cor2);
+}
+
+.dropdown-item:hover{
+    color: var(--cor1);
+}
+
+.navbar-toggler{
+    border: none;
+    outline: none;
 }
