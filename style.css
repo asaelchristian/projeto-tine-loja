@@ -59,6 +59,7 @@ header a{
 
 .span-inicial-1{
     font-family: var(--fonte-padrão);
+    font-size: 13px;
     position: absolute;
     top: 13px;
     left: 70px;
