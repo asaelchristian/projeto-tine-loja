@@ -45,3 +45,83 @@ header a{
     border: none;
     outline: none;
 }
+
+.card{
+    margin-top: 35px;
+    width: 290px;
+    position: relative;
+    border: none;
+}
+
+.card-body{
+    padding-right: 0px;   
+}
+
+.span-inicial-1{
+    font-family: var(--fonte-padrão);
+    position: absolute;
+    top: 13px;
+    left: 70px;
+}
+
+.span-final-1{
+    font-family: var(--fonte-padrão);
+    font-size: 12px;
+    white-space: pre-line;
+    position: absolute;
+    top: 38px;
+    left: 69px;
+}
+
+.span-inicial-2{
+    font-family: var(--fonte-padrão);
+    font-size: 13px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+.span-final-2{
+    font-family: var(--fonte-padrão);
+    font-size: 12px;
+    position: absolute;
+    top: 43px;
+    left: 69px;
+}
+
+.span-inicial-3{
+    font-family: var(--fonte-padrão);
+    font-size: 13px;
+    position: absolute;
+    top: 18px;
+    left: 73px;
+}
+
+.span-final-3{
+    font-family: var(--fonte-padrão);
+    font-size: 12px;
+    position: absolute;
+    top: 41px;
+    left: 72px;
+}
+
+.span-inicial-4{
+    font-family: var(--fonte-padrão);
+    font-size: 13px;
+    position: absolute;
+    top: 0px;
+    left: 70px;
+}
+
+.span-final-4{
+    font-family: var(--fonte-padrão);
+    font-size: 12px;
+    position: absolute;
+    top: 45px;
+    left: 70px
+}
+
+.row{
+    margin: 0px;
+    outline: 0px;
+}
