@@ -24,6 +24,10 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
+main{
+    background-color: aqua;
+}
+
 
 .container-fluid{
     background-color: var(--cor3);
@@ -126,3 +130,30 @@ header a{
     margin: 0px;
     outline: 0px;
 }
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .image-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 0; 
+  }
+  .image-column {
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+  }
+  .image-column img {
+    max-width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; 
+  }
+  .image-column:hover img {
+    transform: scale(1.1); 
+  }
