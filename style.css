@@ -24,11 +24,6 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
-main{
-    background-color: aqua;
-}
-
-
 .container-fluid{
     background-color: var(--cor3);
 }
@@ -131,29 +126,83 @@ header a{
     outline: 0px;
 }
 
-.image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-  }
-  .image-row {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin: 20px 0; 
-  }
-  .image-column {
-    margin: 0 10px;
+.img-zoom {
+    transition: transform 0.4s; 
+}
+
+.img-zoom:hover {
+    transform: scale(1.06); 
+}
+
+.card-img-top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3 ease;
+}
+
+.card-img-top:hover{
+    opacity: 1;
+}
+
+.tc-container{
     position: relative;
-    overflow: hidden;
-    height: 600px;
-  }
-  .image-column img {
-    max-width: 100%;
+}
+
+.tc-container > img{
+    width: 100%;
     height: 100%;
-    transition: transform 0.3s ease; 
-  }
-  .image-column:hover img {
-    transform: scale(1.1); 
-  }
+}
+
+.card-img-top{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.card-img-top:hover{
+    opacity: 1;
+}
+
+h1{
+    font-family: var(--fonte-título-destaque);
+    text-align: center;
+    font-weight: 300;
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+h5{
+    font-family: var(--fonte-padrão);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+del{
+    font-size: 12px;
+    font-family: var(--fonte-padrão);
+}
+
+strong{
+    font-size: 13px;
+    font-family: var(--fonte-padrão);
+}
+
+span{
+    font-family: var(--fonte-padrão);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.body-card{
+    position: relative;
+}
+
+.strong-meio{
+    position: absolute;
+    top: 66px;
+    left: 68px;
+}
