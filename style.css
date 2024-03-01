@@ -24,6 +24,10 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
+main{
+    background-color: aqua;
+}
+
 .container-fluid{
     background-color: var(--cor3);
 }
@@ -205,4 +209,8 @@ span{
     position: absolute;
     top: 66px;
     left: 68px;
+}
+
+.sustentabilidade-inovação{
+    
 }
