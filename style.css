@@ -24,10 +24,6 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
-main{
-    background-color: aqua;
-}
-
 .container-fluid{
     background-color: var(--cor3);
 }
@@ -135,7 +131,7 @@ header a{
 }
 
 .img-zoom:hover {
-    transform: scale(1.06); 
+    transform: scale(1.05); 
 }
 
 .card-img-top{
@@ -211,6 +207,51 @@ span{
     left: 68px;
 }
 
-.sustentabilidade-inovação{
-    
+.strong-meio-vr{
+    position: absolute;
+    top: 333px;
+    left: 80px; 
+}
+
+.strong-meio-vv{
+    position: absolute;
+    top: 66px;
+    left: 66px; 
+}
+
+.p-4{
+    background-color: var(--cor1);
+}
+
+.w-100{
+    background-color: var(--cor2);
+    color: white;
+}
+
+.w-100:hover{
+    background-color: #747974;
+    color: white;
+}
+
+.lista-vip{
+    margin-top: 0px;
+    text-align: center;
+    font-family: var(--fonte-padrão);
+    font-weight: 500;
+}
+
+.ofertas-exclusivas{
+    font-weight: 700;
+    color: var(--cor2);
+    font-family: var(--fonte-padrão);
+    font-size: 18px;
+}
+
+.form-p{
+    font-family: var(--fonte-padrão);
+    font-weight: 400;
+}
+
+.text-body-secondary{
+    color: white;
 }
