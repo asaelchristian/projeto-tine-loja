@@ -24,6 +24,7 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
+
 .container-fluid{
     background-color: var(--cor3);
 }
@@ -254,4 +255,80 @@ span{
 
 .text-body-secondary{
     color: white;
+}
+
+.siga-nos{
+    font-family: var(--fonte-padrão);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.instagram{
+    font-family: var(--fonte-padrão);
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.facebook-icon{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 40%;
+}
+
+.facebook-icon:hover{
+    background-color: #e18b97;
+    color: var(--cor2);
+}
+
+.instagram-icon{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 40%;
+}
+
+.instagram-icon:hover{
+    background-color: #e18b97;
+    color: var(--cor2);
+}
+
+.twitter-icon{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 40%;
+}
+
+.twitter-icon:hover{
+    background-color: #e18b97;
+    color: var(--cor2);
+}
+
+.p-footer{
+    font-family: var(--fonte-padrão);
+    font-size: 13px;
+    text-align: justify;
+}
+
+.h5-footer{
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.mensagem-final{
+    background-color: var(--cor2);
+}
+
+.mensagem-final > p{
+    text-align: center;
+    font-family: var(--fonte-padrão);
+    color: white;
+    padding: 10px;
+}
+
+.mensagem-final a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
 }
