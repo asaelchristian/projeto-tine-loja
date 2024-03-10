@@ -24,6 +24,12 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
+/* Adjust height for small screens using media query */
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 500px; /* Set a smaller height for screens smaller than 768px */
+    }
+}
 
 .container-fluid{
     background-color: var(--cor3);
@@ -331,4 +337,9 @@ span{
     text-decoration: none;
     color: white;
     font-weight: 700;
+}
+
+.carousel-item img {
+    max-width: 100%; /* Garante que as imagens não excedam a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
 }
