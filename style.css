@@ -32,7 +32,7 @@
 /* Adjust height for small screens using media query */
 @media (max-width: 767px) {
     .carousel-item img {
-        height: 550px !important;
+        height: 130px !important;
     }
 }
 
