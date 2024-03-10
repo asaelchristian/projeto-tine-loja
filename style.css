@@ -31,9 +31,14 @@
 
 /* Adjust height for small screens using media query */
 @media (max-width: 767px) {
-    .carousel-item img {
+    .carousel-item img{
         height: 130px !important;
     }
+}
+
+.nav-item > a{
+    color: black;
+    text-decoration: none;
 }
 
 .container-fluid{
@@ -250,6 +255,14 @@ span{
     text-align: center;
     font-family: var(--fonte-padrão);
     font-weight: 500;
+}
+
+.special-link{
+    color: blue;
+}
+
+.special-link:hover{
+   color: rgb(35, 35, 231);
 }
 
 .ofertas-exclusivas{
