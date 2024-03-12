@@ -24,6 +24,21 @@
     --fonte-título-destaque: "Lato", sans-serif;
 }
 
+.whatsapp-icon {
+    position: fixed;
+    z-index: 9999; 
+}
+
+
+
+#bd-theme{
+    background-color: #009100;
+}
+
+#bd-theme:hover{
+    background-color: #14b214;
+}
+
 .carousel-item img {
     max-width: 100%; /* Ensures images don't exceed container width */
     height: 500px; /* Set the default height for larger screens */
@@ -57,6 +72,25 @@ header a{
     color: var(--cor1);
 }
 
+.btn:active{
+    background-color: #ec808e !important;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #f67384;
+    color: white;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: #ec808e;
+    color: white;
+    font-weight: 600;
+}
+
+
+
 .navbar-toggler{
     border: none;
     outline: none;
@@ -86,7 +120,7 @@ header a{
     font-size: 12px;
     white-space: pre-line;
     position: absolute;
-    top: 38px;
+    top: 40px;
     left: 69px;
 }
 
@@ -95,15 +129,15 @@ header a{
     font-size: 13px;
     position: absolute;
     top: 20px;
-    left: 70px;
+    left: 76px;
 }
 
 .span-final-2{
     font-family: var(--fonte-padrão);
     font-size: 12px;
     position: absolute;
-    top: 43px;
-    left: 69px;
+    top: 45px;
+    left: 75px;
 }
 
 .span-inicial-3{
@@ -118,7 +152,7 @@ header a{
     font-family: var(--fonte-padrão);
     font-size: 12px;
     position: absolute;
-    top: 41px;
+    top: 45px;
     left: 72px;
 }
 
@@ -127,7 +161,7 @@ header a{
     font-size: 13px;
     position: absolute;
     top: 0px;
-    left: 70px;
+    left: 76px;
 }
 
 .span-final-4{
@@ -135,7 +169,7 @@ header a{
     font-size: 12px;
     position: absolute;
     top: 45px;
-    left: 70px
+    left: 75px
 }
 
 .row{

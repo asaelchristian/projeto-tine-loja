@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Tine Loja - Login Conta</title>
     <style>
+        :root{
+        --cor1: #EC8E9B;
+        --cor2: #5F7063;  
+        --cor3: #F0F0F0;
+        --cor4: #FF0000;
+
+        --fonte-padrão: "Inter", sans-serif;
+        --fonte-título-destaque: "Lato", sans-serif;
+        }
         body{
             background-color: #EC8E9B;
         }
@@ -20,12 +29,26 @@
             background-color: #F0F0F0;
         }
         .color{
-            background-color: #5F7063;
+            background-color: var(--cor2);
             color: white;
         }
         .color:hover{
-            background-color: #5F7063;
+            background-color: #7f8b82;
             color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--cor2);
+            font-weight: 500;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: var(--cor1);
         }
     </style>
 </head>
@@ -46,6 +69,8 @@
               <button class="w-100 btn btn-lg color" type="submit">Logar</button>
               <hr class="my-4">
               <small class="text-body-secondary">© 2021–2024</small>
+              <br>
+              <p><a href="index.html" target="_self" rel="prev">Voltar para a página anterior</a></p>
             </form>
           </div>
     </main>
