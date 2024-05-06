@@ -55,15 +55,15 @@
 <body>
     <main>
         <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 shadow p-3 mb-5 rounded">
+            <form action="compra.php" class="p-4 p-md-5 border rounded-3 shadow p-3 mb-5 rounded" method="post">
                 <img src="imagens-tine-loja/logo-tine-loja-footer.png" alt="logo">
               <h1 class="lista-vip">Login Para o Site</h1>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">E-mail</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required minlength="8" maxlength="20">
                 <label for="floatingPassword">Senha</label>
               </div>
               <button class="w-100 btn btn-lg color" type="submit">Logar</button>

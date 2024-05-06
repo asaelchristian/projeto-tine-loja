@@ -356,15 +356,15 @@
   <!--Login para lista VIP-->
   <section>
     <div class="col-md-10 mx-auto col-lg-5">
-      <form class="p-4 p-md-5 border rounded-3 shadow p-3 mb-5 rounded">
+      <form action="compra.php" method="post" class="p-4 p-md-5 border rounded-3 shadow p-3 mb-5 rounded">
         <h1 class="lista-vip">Cadastre-se em nossa lista VIP</h1>
         <p class="form-p">Fique por dentro de tudo que acontece e receba <span class="ofertas-exclusivas">ofertas exclusivas!</span></p>
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
           <label for="floatingInput">E-mail</label>
         </div>
         <div class="form-floating mb-3">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required minlength="8" maxlength="20">
           <label for="floatingPassword">Senha</label>
         </div>
         <button class="w-100 btn btn-lg" type="submit">Cadastrar</button>
