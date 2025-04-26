@@ -168,8 +168,8 @@ header a{
     font-family: var(--fonte-padrão);
     font-size: 12px;
     position: absolute;
-    top: 45px;
-    left: 75px
+    top: 60px;
+    left: 75px;
 }
 
 .row{
